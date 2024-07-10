@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: rgb(255, 255, 255);
     font-family: "Inter", sans-serif;
@@ -45,45 +46,31 @@ body{
     color: rgb(255, 255, 255);
     background-color: rgb(13, 19, 33);
 }
+
 /* header banner style */
-.banner-container{
+.header .banner-container{
     width: 100%;
     background-image: url("../assets/Hero-bg.png");
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 20px 0 5px;
 }
-.banner-container .banner{
+.header .banner-container .banner{
     width: 948px;
     margin: 0 auto;
     height: 553px;
     text-align: center;
     margin: 26px auto 20px;
 }
+.header .banner-container .banner h1{
+    color: rgb(13, 19, 33);
+    font-size: 44px;
+    font-weight: 800;
+}
 .banner-container .banner img{
     width: 228px;
     height: 228px;
-}
-/* .banner-container .banner h1{
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 55px;
-    margin: 38px 30px 22px;
-} */
-.title-style{
-    color: rgb(13, 19, 33);
-    font-size: 30px;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-.title-description{
-    color: rgb(13, 19, 33);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 0 70px;
-    padding: 0 50px;
-    opacity: 0.7;
 }
 .banner-container .banner button{
     width: 197px;
@@ -94,8 +81,29 @@ body{
     font-size: 19px;
     font-weight: 600;
     margin: 30px 0 0 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.banner-container .banner button:hover{
+    color: #4C4FF1;
+}
+.title-style{
+    color: rgb(13, 19, 33);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.title-description{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 22px;
+    opacity: 0.7;
 }
 
+/* Development Container Start */
 .development-container{
     width: 1083px;
     height: 1173px;
@@ -108,7 +116,7 @@ body{
     text-align: center;
 }
 
-.title-description{
+.title-text .title-description{
     color: rgb(13, 19, 33);
     font-size: 16px;
     padding: 0 5px;
@@ -126,19 +134,17 @@ body{
     margin: 20px 0;
     border-radius: 13px;
 }
-
-.content-box-text {
+.development-container .content-box-text {
     width: 420px;
     height: 209px;
-
 }
-.content-box-text h3{
+.development-container .content-box-text h3{
     color: rgba(13, 19, 33, 0.7);
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
 }
-.content-box-text p{
+.development-container .content-box-text p{
     color: rgb(13, 19, 33);
     font-size: 16px;
     font-weight: 400;
@@ -146,7 +152,7 @@ body{
     opacity: 0.7;
     margin: 15px 0 28px;
 }
-.content-box-text button{
+.development-container .content-box-text button{
     width: 140px;
     height: 44px;
     color: rgb(13, 19, 33);
@@ -157,7 +163,7 @@ body{
     cursor: pointer;
 }
 
-.content-box .image{
+.development-container .content-box .image{
     width: 246px;
     height: 206px;
 }
@@ -166,7 +172,7 @@ body{
     height: 100%;
     margin-top: -8px;
 }
-.content-box-second{
+.development-container .content-box-second{
     display: flex;
     justify-content: start;
     border-radius: 13px;
@@ -177,29 +183,24 @@ body{
     margin-right: 20px;
 }
 
-/* Inspiration Styles */
-
-.inspiration{
+/* inspiration-container Styles Start*/
+.inspiration-container{
     width: 1083px;
     margin: 0 auto 150px;
     text-align: center;
 }
-.inspiration .inspiration-title{
+.inspiration-container .inspiration-title{
     width: 809px;
     margin: 0 auto;
 }
-.inspiration .inspiration-title h1{
+.inspiration-container .inspiration-title h1{
     color: rgb(13, 19, 33);
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 30px;
 }
-/* .inspiration .inspiration-title p{
-    color: rgb(13, 19, 33);
-    font-size: 16px;
-    font-weight: 400;
-} */
-.title-description{
+
+/* .title-description{
     color: rgb(13, 19, 33);
     font-size: 16px;
     padding: 0 5px;
@@ -207,7 +208,7 @@ body{
     line-height: 24px;
     margin-top: 22px;
     opacity: 0.7;
-}
+} */
 .video-content{
     width: 1022px;
     border: 1px solid rgba(13, 19, 33, 0.2);
@@ -221,21 +222,22 @@ body{
 /* inspiration styles End */
 
 /* Current Target Styles */
-.current-target{
+.current-target-container{
     width: 1083px;
     height: 439px;
     margin: 0 auto 100px;
     text-align: center;
 }
-.current-target .cards{
+.current-target-container .cards{
     display: flex;
     justify-content: space-around;
     gap: 23px;
     margin-top: 40px;
 }
-.current-target .cards .card{
+.current-target-container .cards .card{
     text-align: left;
     padding: 35px;
+    width: 355px;
 }
 .cards .card .card-title{
     color: rgb(13, 19, 33);
@@ -271,16 +273,16 @@ body{
 /* Card End */
 
 /* Next target Styles */
-.next-target{
+.next-target-container{
     width: 1083px;
-    margin: 0 auto;
+    margin: 200px auto 0;
 }
 
  .next-skills{
     width: 100%;
 }
  
-.next-target .next-target-title{
+.next-target-container .next-target-title{
     text-align: center;
 }
 
@@ -309,7 +311,7 @@ body{
     opacity: 0.7;
     margin: 23px 0;
 }
-.support{
+.support-container{
     width: 1083px;
     height: 298px;
     margin: 100px auto;
@@ -322,6 +324,11 @@ body{
     border-radius: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),url(Email));
 } 
+.support-title p{
+    color:rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16px;
+}
 .form{
     display: flex;
     align-items: center;
@@ -354,6 +361,7 @@ body{
     border-radius: 8px;
     border: none;
     background: rgb(255, 255, 255);;
+    cursor: pointer;
 }
 .footer-container{
     background-color: rgba(13, 19, 33, 0.03);

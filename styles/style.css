@@ -28,7 +28,6 @@ body{
 .header .nav h3{
     font-size: 27px;
     font-weight: 600;
-
 }
 .header .nav button{
     width: 220px;
@@ -45,7 +44,6 @@ body{
 .header .nav button:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(13, 19, 33);
-
 }
 /* header banner style */
 .banner-container{
@@ -66,13 +64,19 @@ body{
     width: 228px;
     height: 228px;
 }
-.banner-container .banner h1{
+/* .banner-container .banner h1{
     font-size: 36px;
     font-weight: 800;
     line-height: 55px;
     margin: 38px 30px 22px;
+} */
+.title-style{
+    color: rgb(13, 19, 33);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
 }
-.banner-container .banner p{
+.title-description{
     color: rgb(13, 19, 33);
     font-size: 14px;
     font-weight: 400;
@@ -95,7 +99,7 @@ body{
 .development-container{
     width: 1083px;
     height: 1173px;
-    margin: 200px auto;
+    margin: 200px auto 150px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
     padding: 76px 92px;
@@ -103,12 +107,8 @@ body{
 .development-container .title-text{
     text-align: center;
 }
-.development-container .title-text h1{
-    font-size: 30px;
-    color: rgb(13, 19, 33);
-    font-weight: 800;
-}
-.development-container .title-text p{
+
+.title-description{
     color: rgb(13, 19, 33);
     font-size: 16px;
     padding: 0 5px;
@@ -175,4 +175,96 @@ body{
 }
 .content-box-second .image{
     margin-right: 20px;
+}
+
+/* Inspiration Styles */
+
+.inspiration{
+    width: 1083px;
+    margin: 0 auto 150px;
+    text-align: center;
+}
+.inspiration .inspiration-title{
+    width: 809px;
+    margin: 0 auto;
+}
+.inspiration .inspiration-title h1{
+    color: rgb(13, 19, 33);
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+/* .inspiration .inspiration-title p{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 400;
+} */
+.title-description{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 22px;
+    opacity: 0.7;
+}
+.video-content{
+    width: 1022px;
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    border-radius: 15px;
+    margin-top: 40px;
+    
+}
+.video-content iframe{
+    padding: 30px;
+}
+/* inspiration styles End */
+
+/* Current Target Styles */
+.current-target{
+    width: 1083px;
+    height: 439px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+.current-target .cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 23px;
+    margin-top: 40px;
+}
+.current-target .cards .card{
+    text-align: left;
+    padding: 35px;
+}
+.cards .card .card-title{
+    color: rgb(13, 19, 33);
+    font-size: 24px;
+    font-weight: 800;
+    margin: 8px 0;
+}
+.card a{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+.card p{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 24px;
+}
+.html-item{
+    border-radius: 16px;
+    background: rgba(255, 76, 30, 0.05);
+}
+.css-item{
+    border-radius: 16px;
+    background: rgba(0, 76, 232, 0.05);
+}
+.js-item{
+    border-radius: 16px;
+    background: rgba(255, 223, 0, 0.05);
 }

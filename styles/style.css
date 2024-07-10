@@ -43,6 +43,7 @@ body{
     transition: 0.3s ease;
 }
 .header .nav button:hover{
+    /* width: 100%; */
     color: rgb(255, 255, 255);
     background-color: rgb(13, 19, 33);
 }
@@ -53,7 +54,7 @@ body{
     background-image: url("../assets/Hero-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding: 20px 0 5px;
 }
 .header .banner-container .banner{
@@ -216,8 +217,8 @@ body{
 }
 .inspiration-container .video-content iframe{
     padding: 30px;
+    border-radius: 45px;
 }
-
 /* Current Target Styles */
 .current-target-container{
     width: 1083px;
@@ -286,7 +287,6 @@ body{
     display: flex;
     align-items: center;
     gap: 23px;
-    box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.15);
     border-radius: 16px;
     background: rgb(255, 255, 255);

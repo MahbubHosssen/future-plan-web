@@ -67,26 +67,34 @@ body{
     color: rgb(13, 19, 33);
     font-size: 44px;
     font-weight: 800;
+    margin: 15px 0;
+}
+.banner p{
+    padding: 0 130px;
 }
 .banner-container .banner img{
     width: 228px;
     height: 228px;
 }
-.banner-container .banner button{
+.banner-container .banner a button{
     width: 197px;
     height: 58px;
-    border-radius: 8px;
     background: rgb(13, 19, 33);
+    border-radius: 8px;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+    
+}
+.banner-container .banner a button{
+    text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 19px;
     font-weight: 600;
-    margin: 30px 0 0 0;
-    cursor: pointer;
-    transition: 0.3s ease;
 }
 .banner-container .banner button:hover{
     color: #4C4FF1;
-}
+    transition: 0.3s ease;
+} */
 .title-style{
     color: rgb(13, 19, 33);
     font-size: 30px;
@@ -106,8 +114,8 @@ body{
 /* Development Container Start */
 .development-container{
     width: 1083px;
-    height: 1173px;
-    margin: 200px auto 150px;
+    height: 1223px;
+    margin: 200px auto 100px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
     padding: 76px 92px;
@@ -186,7 +194,7 @@ body{
 /* inspiration-container Styles Start*/
 .inspiration-container{
     width: 1083px;
-    margin: 0 auto 150px;
+    margin: 0 auto 100px;
     text-align: center;
 }
 .inspiration-container .inspiration-title{
@@ -199,39 +207,28 @@ body{
     font-weight: 800;
     margin-bottom: 30px;
 }
-
-/* .title-description{
-    color: rgb(13, 19, 33);
-    font-size: 16px;
-    padding: 0 5px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 22px;
-    opacity: 0.7;
-} */
-.video-content{
+.inspiration-container .video-content{
     width: 1022px;
     border: 1px solid rgba(13, 19, 33, 0.2);
     border-radius: 15px;
     margin-top: 40px;
     
 }
-.video-content iframe{
+.inspiration-container .video-content iframe{
     padding: 30px;
 }
-/* inspiration styles End */
 
 /* Current Target Styles */
 .current-target-container{
     width: 1083px;
     height: 439px;
-    margin: 0 auto 100px;
+    margin: 0 auto 0px;
     text-align: center;
 }
 .current-target-container .cards{
     display: flex;
     justify-content: space-around;
-    gap: 23px;
+    gap: 25px;
     margin-top: 40px;
 }
 .current-target-container .cards .card{
@@ -251,31 +248,30 @@ body{
     font-weight: 700;
     text-decoration-line: underline;
 }
-.card p{
+.cards .card p{
     color: rgb(13, 19, 33);
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0;
     line-height: 24px;
 }
-.html-item{
+.cards .html-item{
     border-radius: 16px;
     background: rgba(255, 76, 30, 0.05);
 }
-.css-item{
+.cards .css-item{
     border-radius: 16px;
     background: rgba(0, 76, 232, 0.05);
 }
-.js-item{
+.cards .js-item{
     border-radius: 16px;
     background: rgba(255, 223, 0, 0.05);
 }
-/* Card End */
 
 /* Next target Styles */
 .next-target-container{
     width: 1083px;
-    margin: 200px auto 0;
+    margin: 160px auto 0;
 }
 
  .next-skills{

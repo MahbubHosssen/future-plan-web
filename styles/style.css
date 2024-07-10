@@ -320,6 +320,10 @@ body{
     border-radius: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),url(Email));
 } 
+.support-title h1{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
 .support-title p{
     color:rgb(255, 255, 255);
     font-weight: 400;
